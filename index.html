@@ -4,6 +4,7 @@
     <title>Beacon ID Parser by m.i.k. IT</title>
     <link rel="stylesheet" href="./css/style.css"/>
     <script src="./js/main.js"></script>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 </head>
 <body>
 
@@ -12,8 +13,12 @@
     Hier bitte eine .csv Datei hochladen die in der 2. Spalte den Bluuki Code, in der 3. Spalte die uuid, in der 4. Spalte die Major und in der 5. Spalte die Minor ID hat.
     Anschließend wird eine entsprechende mik-Id erstellt.
 </p>
-<input type="file" id="file-input" />
+
+<input type="file" id="file-input" /><br/><br/>
+<input type="text" id="account-input" placeholder="account">
+<button id="sql-create-button">SQL-Befehl erstellen</button>
 <br>
+<div id="sql-output"></div>
 <div id="output"></div>
 
 </body>
